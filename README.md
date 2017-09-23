@@ -253,13 +253,6 @@ pipes:[Search],
 - Add a `<base href="/">` to your `index.html` `<head>`
 - Create a simple `Party` component with a `hello world` template
 - Import all the required Router classes into `app.ts`
-```js
-import { Routes, RouterModule} from '@angular/router';
-```
-- Include `RouterOutlet` and `RouterLink` in your `directives:[]`
-```js
-  directives: [RouterOutlet, RouterLink],
-```
 - Replace `<home>` the `<router-outlet>`
 - Decorate your `App` with your routes
 ```js
@@ -279,14 +272,6 @@ const routes:Routes = [
       <a [routerLink]="['Party']" class="nav-link">Party</a>
     </li>
   </ul>
-```
-- Stylize the active route with a `.router-link-active` style:
-```css
-.router-link-active{
-  color: #55595c;
-  background-color: #fff;
-  border-color: #ddd #ddd transparent;
-}
 ```
 (NOTE :  use @NgModule )
 ```
